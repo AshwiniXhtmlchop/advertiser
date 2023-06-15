@@ -1,32 +1,42 @@
 a{text-decoration: none;}
 .au-input{height: 43px !important;}
 .form-group{margin-bottom: 20px;}
-.menu-sidebar.dark_sidebar {
-    background: #0f1a34;
+.page-wrapper, .page-container{background: #f4f6f9;}
+.page-container{padding-left: 250px;}
+.dark_sidebar, .dark-bg {
+    background: #343a40;
 }
-.dark_sidebar .logo, .dark-bg{
-    background:#182444;
+.white-bg{background: #ffffff;}
+.menu-sidebar{
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)!important;
+    width: 250px;
+    z-index: 11;
 }
 .menu-sidebar .logo{
     border: none;
     justify-content: center;
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #4b545c;
 }
-.navbar-sidebar{padding: 35px 0 0 0;}
-.navbar-sidebar .navbar__list li a{padding: 15px 30px;color: #ffffff;}
-.navbar-sidebar .navbar__list li a:hover, .navbar-sidebar .navbar__list li.active a{background: #091023;color: #5886ff;}
+.header-desktop{border-bottom: 1px solid #dee2e6;box-shadow: none;left: 250px;}
+.navbar-sidebar{padding: 20px 10px;}
+.navbar-sidebar .navbar__list li a{padding: 0.5rem 1rem;color: #c2c7d0;border-radius: 0.25rem;margin-bottom: 0.2rem;}
+.navbar-sidebar .navbar__list li a:hover, .navbar-sidebar .navbar__list li.active a{background-color: rgba(255,255,255,.1);color: #fff;}
 .header-wrap{justify-content: flex-end;column-gap: 30px;}
 .account-info .account-info-box{
     font-size: 14px;
     color: #ffffff;
-    background: #5886ff;
+    background: #17a2b8;
     padding: 5px 10px;
     border-radius: 5px;
 }
 .account-log a{
     font-size: 14px;
-    color: #ffffff;
+    color: rgba(0,0,0,.5);
 }
-.account-log a:hover{color: #5886ff;}
+.account-log a:hover{color: #17a2b8;}
 .account-log a i{
     margin-right: 10px;
 }

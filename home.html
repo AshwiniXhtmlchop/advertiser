@@ -106,7 +106,7 @@
         <aside class="menu-sidebar dark_sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="images/icon/logo.png" alt="logo"/>
+                    <img src="images/icon/logo.png" alt="logo" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -157,14 +157,14 @@
         </aside>
         <!-- END MENU SIDEBAR-->
         <div class="page-container">
-              <!-- HEADER DESKTOP-->
-              <header class="header-desktop dark-bg">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop white-bg">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <div class="account-info">
                                 <div class="account-info-box">
-                                    Advertiser Name, Advertiser ID, Login Time Stamp 
+                                    Advertiser Name, Advertiser ID, Login Time Stamp
                                 </div>
                             </div>
                             <div class="account-log">
@@ -175,117 +175,134 @@
                 </div>
             </header>
             <!-- HEADER DESKTOP-->
-        <div class="col-12">
-    <div class="continer">
-        <div class="row">
-            <div class="col-3">
-                <form method="post" id="dashboard_deal">
-                                            <select name="deal_no" id="deal_no">
-                            <option value="">Deal No</option>
-                                                            <option value="800000001">American Top</option>
-                                                            <option value="800000002">Gola ABC</option>
-                                                            <option value="800000003">WWE ABC</option>
-                                                    </select>
-                                                                <select name="campaign" id="campaign">
-                            <option value="">Campaign</option>
-                                                            <option value="110000001">American Top(110000001)</option>
-                                                            <option value="110000002">Gola ABC(110000002)</option>
-                                                    </select>
-                                                                <select name="demographics" id="demographics">
-                            <option value="">Demographics</option>
-                                                            <option value="21">ALL</option>
-                                                    </select>
-                                                                <select name="outlet" id="outlet">
-                            <option value="">Out Let</option>
-                                                            <option value="3">LOCAL</option>
-                                                    </select>
-                                                                <select name="agency" id="agency">
-                            <option value="">Agency</option>
-                                                            <option value="7">RAW LINEAR</option>
-                                                    </select>
-                                                                <select name="location" id="location">
-                            <option value="">Location</option>
-                                                            <option value="1">NEW YORK</option>
-                                                    </select>
-                                                                <select name="brand" id="brand">
-                            <option value="">Brand</option>
-                                                            <option value="4">X3</option>
-                                                    </select>
-                                        <input type="text" name="daterange" id="daterange" value="" placeholder="mm/dd/yyyy - mm/dd/yyyy" />
-                    <input type="hidden" name="start_daterange" id="start_daterange" value="" />
-                    <input type="hidden" name="end_daterange" id="end_daterange" value="" />
-                </form>
-            </div>
-            <div class="col-9">
-                <div class="view-sec">
-                    <div class="deal-view-sec">
-                        <h2>Deal View</h2>
-                        <div class="deal-view">
-                            <div class="col-3">
-                                <div class="deal-component" >
-                                    <span>Dollars</span>
-                                    <input type="text" name="" id="deal_dollars" value="">
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 filter-box">
+                                <div class="filter-box">
+                                    <form method="post" id="dashboard_deal">
+                                        <select name="deal_no" id="deal_no">
+                                            <option value="">Deal No</option>
+                                            <option value="800000001">American Top</option>
+                                            <option value="800000002">Gola ABC</option>
+                                            <option value="800000003">WWE ABC</option>
+                                        </select>
+                                        <select name="campaign" id="campaign">
+                                            <option value="">Campaign</option>
+                                            <option value="110000001">American Top(110000001)</option>
+                                            <option value="110000002">Gola ABC(110000002)</option>
+                                        </select>
+                                        <select name="demographics" id="demographics">
+                                            <option value="">Demographics</option>
+                                            <option value="21">ALL</option>
+                                        </select>
+                                        <select name="outlet" id="outlet">
+                                            <option value="">Out Let</option>
+                                            <option value="3">LOCAL</option>
+                                        </select>
+                                        <select name="agency" id="agency">
+                                            <option value="">Agency</option>
+                                            <option value="7">RAW LINEAR</option>
+                                        </select>
+                                        <select name="location" id="location">
+                                            <option value="">Location</option>
+                                            <option value="1">NEW YORK</option>
+                                        </select>
+                                        <select name="brand" id="brand">
+                                            <option value="">Brand</option>
+                                            <option value="4">X3</option>
+                                        </select>
+                                        <input type="text" name="daterange" id="daterange" value=""
+                                            placeholder="mm/dd/yyyy - mm/dd/yyyy" />
+                                        <input type="hidden" name="start_daterange" id="start_daterange" value="" />
+                                        <input type="hidden" name="end_daterange" id="end_daterange" value="" />
+                                    </form>
                                 </div>
-                                <div class="deal-component" >
-                                    <span>CPM</span>
-                                    <input type="text" name="" id="deal_cpm" value="">
+                                <div class="deal-view-box">
+                                    <h2>Deal View</h2>
+                                    <div class="deal-view">
+                                        <div class="col-3">
+                                            <div class="deal-component">
+                                                <span>Dollars</span>
+                                                <input type="text" name="" id="deal_dollars" value="">
+                                            </div>
+                                            <div class="deal-component">
+                                                <span>CPM</span>
+                                                <input type="text" name="" id="deal_cpm" value="">
+                                            </div>
+                                            <div class="deal-component">
+                                                <span>Impressions</span>
+                                                <input type="text" name="" id="deal_impressions" value="">
+                                            </div>
+                                            <div class="deal-component">
+                                                <span>GRP</span>
+                                                <input type="text" name="" id="deal_grp" value="">
+                                            </div>
+                                            <div class="deal-component">
+                                                <span>Deal Unit</span>
+                                                <input type="text" name="" id="deal_deal_unit" value="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="deal-component" >
-                                    <span>Impressions</span>
-                                    <input type="text" name="" id="deal_impressions" value="">
+                                <div class="advertiser-dashboard">
+                                    <div class="advertiser-view-sec">
+                                        <div class="advertiser-filter-sec">
+                                            <h2>Advertiser Dashboard</h2>
+                                            <div class="advertiser-filter">
+                                                <input type="text" name="advertiser_daterange" id="advertiser_daterange"
+                                                    value="" placeholder="mm/dd/yyyy - mm/dd/yyyy" />
+                                                <input type="hidden" name="advertiser_start_daterange"
+                                                    id="advertiser_start_daterange" value="" />
+                                                <input type="hidden" name="advertiser_end_daterange"
+                                                    id="advertiser_end_daterange" value="" />
+                                            </div>
+                                        </div>
+    
+                                        <div class="advertiser-view">
+                                            <div class=" col-9 advertiser-component">
+                                                <input type="text" name="advertiser_inflight" id="advertiser_inflight"
+                                                    value="0 Inflight">
+                                                <input type="text" name="advertiser_proposal" id="advertiser_proposal"
+                                                    value="0 Proposal">
+                                                <input type="text" name="advertiser_ended" id="advertiser_ended"
+                                                    value="0 Ended">
+                                                <input type="text" name="advertiser_approved" id="advertiser_approved"
+                                                    value="0 Approved">
+                                            </div>
+                                            <div class=" col-9 advertiser-component">
+                                                <input type="text" name="advertiser_order" id="advertiser_order"
+                                                    value="0 Ordered">
+                                                <input type="text" name="advertiser_planning" id="advertiser_planning"
+                                                    value="0 Planning">
+                                                <input type="text" name="advertiser_expired" id="advertiser_expired"
+                                                    value="0 Expired">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="deal-component" >
-                                    <span>GRP</span>
-                                    <input type="text" name="" id="deal_grp" value="">
-                                </div>
-                                <div class="deal-component" >
-                                    <span>Deal Unit</span>
-                                    <input type="text" name="" id="deal_deal_unit" value="">
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="advertiser-view-sec">
-                        <div class="advertiser-filter-sec">
-                            <h2>Advertiser Dashboard</h2>
-                            <div class="advertiser-filter">
-                                <input type="text" name="advertiser_daterange" id="advertiser_daterange" value="" placeholder="mm/dd/yyyy - mm/dd/yyyy" />
-                                <input type="hidden" name="advertiser_start_daterange" id="advertiser_start_daterange" value="" />
-                                <input type="hidden" name="advertiser_end_daterange" id="advertiser_end_daterange" value="" />
-                            </div>
-                        </div>
-                        
-                        <div class="advertiser-view">
-                            <div class=" col-9 advertiser-component" >
-                                <input type="text" name="advertiser_inflight" id="advertiser_inflight" value="0 Inflight">
-                                <input type="text" name="advertiser_proposal" id="advertiser_proposal" value="0 Proposal">
-                                <input type="text" name="advertiser_ended" id="advertiser_ended" value="0 Ended">
-                                <input type="text" name="advertiser_approved" id="advertiser_approved" value="0 Approved">
-                            </div>
-                            <div class=" col-9 advertiser-component" >
-                                <input type="text" name="advertiser_order" id="advertiser_order" value="0 Ordered">
-                                <input type="text" name="advertiser_planning" id="advertiser_planning" value="0 Planning">
-                                <input type="text" name="advertiser_expired" id="advertiser_expired" value="0 Expired">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-</div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
     
-</div>
 
-<!-- Jquery JS-->
-<script src="vendor/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap JS-->
-<script src="vendor/bootstrap-5.1/popper.min.js"></script>
-<script src="vendor/bootstrap-5.1/bootstrap.min.js"></script>
-<!-- Vendor JS       -->
-<!-- <script src="vendor/slick/slick.min.js"></script>
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-5.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-5.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <!-- <script src="vendor/slick/slick.min.js"></script>
 <script src="vendor/wow/wow.min.js"></script>
 <script src="vendor/animsition/animsition.min.js"></script>
 <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
@@ -296,12 +313,12 @@
 <script src="vendor/circle-progress/circle-progress.min.js"></script>
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
 <script src="vendor/chartjs/Chart.bundle.min.js"></script> -->
-<script src="vendor/select2/select2.min.js">
-</script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
 
-<!-- Main JS-->
-<!-- <script src="js/main.js"></script> -->
-<script src="js/custom.js"></script>
+    <!-- Main JS-->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
