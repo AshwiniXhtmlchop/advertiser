@@ -64,36 +64,62 @@
                             @endforeach
                         </select>
                     @endif
-
                     <input type="text" name="daterange" value="01/01/2015 - 01/01/2015" />
                 </form>
             </div>
             <div class="col-9">
-                <h2>Deal View</h2>
-                <div class="deal-view">
-                    <div class="col-3">
-                        <div class="deal-component" >
-                            <span>Dollars</span>
-                            <input type="text" name="" id="deal_dollars" value="">
+                <div class="view-sec">
+                    <div class="deal-view-sec">
+                        <h2>Deal View</h2>
+                        <div class="deal-view">
+                            <div class="col-3">
+                                <div class="deal-component" >
+                                    <span>Dollars</span>
+                                    <input type="text" name="" id="deal_dollars" value="">
+                                </div>
+                                <div class="deal-component" >
+                                    <span>CPM</span>
+                                    <input type="text" name="" id="deal_cpm" value="">
+                                </div>
+                                <div class="deal-component" >
+                                    <span>Impressions</span>
+                                    <input type="text" name="" id="deal_impressions" value="">
+                                </div>
+                                <div class="deal-component" >
+                                    <span>GRP</span>
+                                    <input type="text" name="" id="deal_grp" value="">
+                                </div>
+                                <div class="deal-component" >
+                                    <span>Deal Unit</span>
+                                    <input type="text" name="" id="deal_deal_unit" value="">
+                                </div>
+                            </div>    
                         </div>
-                        <div class="deal-component" >
-                            <span>CPM</span>
-                            <input type="text" name="" id="deal_cpm" value="">
+                    </div>
+                    <div class="advertiser-view-sec">
+                        <div class="advertiser-filter-sec">
+                            <h2>Advertiser Dashboard</h2>
+                            <div class="advertiser-filter">
+                                <input type="text" name="advertiser_daterange" id="advertiser_daterange" value="" placeholder="mm/dd/yyyy - mm/dd/yyyy" />
+                                <input type="hidden" name="advertiser_start_daterange" id="advertiser_start_daterange" value="" />
+                                <input type="hidden" name="advertiser_end_daterange" id="advertiser_end_daterange" value="" />
+                            </div>
                         </div>
-                        <div class="deal-component" >
-                            <span>Impressions</span>
-                            <input type="text" name="" id="deal_impressions" value="">
+                        
+                        <div class="advertiser-view">
+                            <div class=" col-9 advertiser-component" >
+                                <input type="text" name="advertiser_inflight" id="advertiser_inflight" value="0 Inflight">
+                                <input type="text" name="advertiser_proposal" id="advertiser_proposal" value="0 Proposal">
+                                <input type="text" name="advertiser_ended" id="advertiser_ended" value="0 Ended">
+                                <input type="text" name="advertiser_approved" id="advertiser_approved" value="0 Approved">
+                            </div>
+                            <div class=" col-9 advertiser-component" >
+                                <input type="text" name="advertiser_order" id="advertiser_order" value="0 Ordered">
+                                <input type="text" name="advertiser_planning" id="advertiser_planning" value="0 Planning">
+                                <input type="text" name="advertiser_expired" id="advertiser_expired" value="0 Expired">
+                            </div>
                         </div>
-                        <div class="deal-component" >
-                            <span>GRP</span>
-                            <input type="text" name="" id="deal_grp" value="">
-                        </div>
-                        <div class="deal-component" >
-                            <span>Deal Unit</span>
-                            <input type="text" name="" id="deal_deal_unit" value="">
-                        </div>
-                    </div>    
-                    
+                    </div>
                 </div>
             </div>
         </div>
