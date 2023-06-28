@@ -137,10 +137,10 @@
                             <a href="#"><i class="fa fa-thumbs-up"></i>Deal</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench"></i>Ad Operation</a>
+                            <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Ad Operation</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-volume-up"></i>Campaign</a>
+                            <a href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Campaign</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-user"></i>Advertiser Profile</a>
@@ -149,7 +149,7 @@
                             <a href="#"><i class="fa fa-file"></i>Reports</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap"></i>Administration</a>
+                            <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Administration</a>
                         </li>
                     </ul>
                 </nav>
@@ -217,15 +217,17 @@
                                     <form method="post" id="dashboard_deal">
                                         <div class="row">
                                             <div
-                                                class="col-12 head d-flex justify-content-between align-items-center mb-4">
+                                                class="col-12 head d-flex justify-content-center align-items-center mb-4">
                                                 <h2 class="mb-0">Filter</h2>
-                                                <div class="daterange">
-                                                    <input type="text" name="daterange" id="daterange" value=""
-                                                        placeholder="mm/dd/yyyy - mm/dd/yyyy" />
-                                                    <input type="hidden" name="start_daterange" id="start_daterange"
-                                                        value="" />
-                                                    <input type="hidden" name="end_daterange" id="end_daterange"
-                                                        value="" />
+                                                <div class="d-flex align-items-center flight-range">
+                                                    <div class="daterange">
+                                                        <input type="text" name="daterange" id="daterange" value=""
+                                                            placeholder="mm/dd/yyyy - mm/dd/yyyy" />
+                                                        <input type="hidden" name="start_daterange" id="start_daterange"
+                                                            value="" />
+                                                        <input type="hidden" name="end_daterange" id="end_daterange"
+                                                            value="" />
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-4 col-xl-3 form-group">
@@ -286,7 +288,7 @@
                             <div class="col-md-6 card-main">
                                 <div class="deal-view-box card">
                                     <div
-                                    class="col-12 head d-flex justify-content-between align-items-center mb-4">
+                                    class="head d-flex justify-content-center align-items-center mb-4">
                                     <h2 class="mb-0">Deal View</h2>
                                     </div>
                                    
@@ -345,60 +347,63 @@
                                     <div class="advertiser-view">
                                         <div class="row">
                                             <div
-                                                class="col-12 head d-flex justify-content-between align-items-center mb-4">
+                                                class="col-12 head d-flex align-items-center mb-4">
                                                 <h2 class="mb-0">Advertiser Dashboard</h2>
-                                                <div class="daterange advertiser-filter">
-                                                    <input type="text" name="advertiser_daterange"
-                                                        id="advertiser_daterange" value=""
-                                                        placeholder="mm/dd/yyyy - mm/dd/yyyy" />
-                                                    <input type="hidden" name="advertiser_start_daterange"
-                                                        id="advertiser_start_daterange" value="" />
-                                                    <input type="hidden" name="advertiser_end_daterange"
-                                                        id="advertiser_end_daterange" value="" />
+                                                <div class="d-flex align-items-center flight-range">
+                                                    <div class="daterange advertiser-filter">
+                                                        <input type="text" name="advertiser_daterange"
+                                                            id="advertiser_daterange" value=""
+                                                            placeholder="mm/dd/yyyy - mm/dd/yyyy" />
+                                                        <input type="hidden" name="advertiser_start_daterange"
+                                                            id="advertiser_start_daterange" value="" />
+                                                        <input type="hidden" name="advertiser_end_daterange"
+                                                            id="advertiser_end_daterange" value="" />
+                                                    </div>
                                                 </div>
+                                      
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c1"><i class="fa fa-plane"></i></span>
                                                     <h4>0 Inflight</h4>
                                                </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c2"><i class="fa fa-file"></i></span>
                                                     <h4>0 Proposal</h4>
                                                </div>
                                               
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c3"><i class="fa fa-clock-o"></i></span>
                                                     <h4>0 Ended</h4>
                                                </div>
                                                
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c4"><i class="fa fa-thumbs-up"></i></span>
                                                     <h4>0 Approved</h4>
                                                </div>
                                                
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c1"><i class="fa fa-shopping-cart"></i></span>
                                                     <h4>0 Ordered</h4>
                                                </div>
                                                
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c2"><i class="fa fa-list-alt"></i></span>
                                                     <h4>0 Planning</h4>
                                                </div>
                                                
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-xl-4 form-group">
+                                            <div class="col-md-6 col-lg-6 col-xl-6 form-group">
                                                 <div class="advertiser-component d-flex align-items-center">
                                                     <span class="info-icon overview-item--c3"><i class="fa fa-clock-o"></i></span>
                                                     <h4>0 Expired</h4>
@@ -428,20 +433,20 @@
                                         <span class="message"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label for="current password" class="col-md-4 col-form-label text-md-right">Current Password</label>
+                                        <label for="current password" class="col-form-label">Current Password</label>
                                             <input type="password" id="current_password" class="form-control" name="current_password" value="">
                                     </div>
                                     <div class="form-group">
-                                        <label for="new password" class="col-md-4 col-form-label text-md-right">New Password</label>
+                                        <label for="new password" class="col-form-label">New Password</label>
                                             <input type="password" id="new_password" class="form-control" name="new_password" value="">
                                     </div>
                                     <div class="form-group">
-                                        <label for="confirm password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                                        <label for="confirm password" class="col-form-label">Confirm Password</label>
                                             <input type="password" id="confirm_password" class="form-control" name="confirm_password">
                                     </div>
             
-                                    <div class="col-md-6 offset-md-4">
-                                        <input type="submit" class="btn btn-primary" value="Chnage Password">
+                                    <div class="text-center">
+                                        <input type="submit" class="btn btn-primary" value="Change Password">
                                     </div>
                                 </form>
                             </div>
