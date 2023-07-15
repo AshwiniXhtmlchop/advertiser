@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="xcinm65ZNAgbcM9aXDZYOkdU9qWMc8RoPpzr1RId">
+    <title> Edit Campaign </title>
+   
+    <meta name="description" content="Laravel Starter">
+    <meta name="author" content="FasTrax Infotech">
+    <meta name="web-url" content="http://clientreviewlink.com" />
+    <meta name="storage-path" content="/home/clientreviewlink/public_html/storage" />
+
+        
+    <link rel="shortcut icon" href="http://clientreviewlink.com/public/favicon.ico">
+    <!-- Fontfaces CSS-->
+    <link href="http://clientreviewlink.com/public/assets/css/font-face.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    
+    <!-- Bootstrap 5 css -->
+    <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.bundle.min.css" rel="stylesheet" media="all">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link href="http://clientreviewlink.com/public/assets/css/common/datatable/dataTables.bootstrap5.min.css" rel="stylesheet" media="all">   
+
+    <!-- Select2 -->
+    <link href="http://clientreviewlink.com/public/assets/css/common/select2/select2.min.css" rel="stylesheet" media="all">
+    
+    <!-- Theme css -->
+    <link href="http://clientreviewlink.com/public/assets/css/theme.css" rel="stylesheet" media="all">
+    
+    <!-- Custom css -->
+    <link href="css/custom-style.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/custom.css" rel="stylesheet" media="all"></head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- MOBILE HEADER START -->
+            <header class="header-mobile d-block d-lg-none">
+    <div class="header-mobile__bar">
+        <div class="container-fluid">
+            <div class="header-mobile-inner">
+                <a class="logo" href="http://clientreviewlink.com">
+                    <img src="http://clientreviewlink.com/public/images/logo/logo.png" alt="logo" />
+                </a>
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-mobile__list list-unstyled">
+                <li class="" ><a href="http://clientreviewlink.com"><i class="fas fa-tachometer-alt"></i>Dashbaord</a></li>
+                <li class="" ><a href="http://clientreviewlink.com/deal"><i class="fa fa-thumbs-up"></i>Deal</a></li>
+                <li class=""><a href="http://clientreviewlink.com/campaign"><i class="fa fa-volume-up"></i>Campaign</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-wrench"></i>Ad Operation</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-sitemap"></i>Administration</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>        <!-- MOBILE HEADER END -->
+
+        <!-- LEFT SIDE BAR MENU START -->
+            <aside class="menu-sidebar dark_sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="http://clientreviewlink.com">
+            <img src="http://clientreviewlink.com/public/images/logo/logo.png" class="main-bar" alt="logo" />
+            <img src="http://clientreviewlink.com/public/images/logo/logo-small.svg" class="side-bar" alt="logo" />
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li class="" ><a href="http://clientreviewlink.com"><i class="fas fa-tachometer-alt"></i>Dashbaord</a></li>
+                <li class="" ><a href="http://clientreviewlink.com/deal"><i class="fa fa-thumbs-up"></i>Deal</a></li>
+                <li class="active"><a href="http://clientreviewlink.com/campaign"><i class="fa fa-bullhorn" aria-hidden="true"></i>Campaign</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-cogs" aria-hidden="true"></i>Ad Operation</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-users" aria-hidden="true"></i>Administration</a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>        <!-- LEFT SIDE BAR MENU END -->
+
+            <div class="page-container">
+    <!-- DESHTOP TOP MENU START -->
+    <header class="header-desktop white-bg">
+        <div class="section__content section__content--p10">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                    <div class="header-wrap-box d-flex align-items-center justify-content-between">
+                        <div class="bar-icon-box">
+                            <a class="bars-icon" href="#" role="button"><i class="fas fa-bars"></i></a> 
+                        </div> 
+                        <ul class="d-flex client-info">
+                            <li>
+                                <span>Client Name</span>
+                                                                    <b>Foxy TV </b>
+                                                            </li>
+                            <li>
+                                <span>Advertiser Name</span>
+                                                                    <b>BMW</b>
+                                                            </li>
+                            <li>
+                                <span>Media Line</span>
+                                                                    <b>Linear</b>
+                                                            </li>
+                        </ul>
+                        <div class="account-info-main d-flex align-items-center">
+                            <div class="account-info account-wrap">
+                                <div class="account-item clearfix js-item-menu">
+                                    <div class="image">
+                                        <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                                                                    <a class="js-acc-btn" href="/">Advertiser BMW</a>
+                                                                            </div>
+                                    <div class="account-dropdown js-dropdown">
+                                        <div class="info clearfix">
+                                            <div class="image">
+                                                    <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="name">
+                                                                                                            <a href="/">Advertiser BMW</a>
+                                                                                                    </h5>
+                                                                                                    <span class="email">devloper.xchop@gmail.com</span>
+                                                                                            </div>
+                                        </div>
+                                        <div class="client-info-box">
+                                            <ul class="client-info">
+                                                <li>
+                                                    <span>Client Name</span>
+                                                                                        <b>Foxy TV </b>
+                                                                                </li>
+                                                <li>
+                                                    <span>Advertiser Name</span>
+                                                                                        <b>BMW</b>
+                                                                                </li>
+                                                <li>
+                                                    <span>Media Line</span>
+                                                                                        <b>Linear</b>
+                                                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="account-dropdown__body">
+                                            <div class="account-dropdown__item">
+                                                <p><strong>Advertiser ID: </strong>8</p>
+                                            </div>
+                                            <div class="account-dropdown__item">
+                                                <p><strong>Login Time: </strong>07-15-2023 06:27:51</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-log">
+                                <a href="http://clientreviewlink.com/logout"><i class="zmdi zmdi-power"></i>Logout</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-notification-success text-center mb-3 alert-success" role="alert">
+            <button type="button" class="close" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <p><i class="fa fa-check"></i><span class="success-message">Success</span></p>
+        </div>
+        <div class="alert alert-notification-error text-center mb-3 alert-danger" role="alert">
+            <button type="button" class="close" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <p><i class="fa fa-warning"></i><span class="error-message">Error</span></p>
+        </div>
+    </header>    <!-- DESHTOP TOP MENU END -->
+    <!-- MAIN CONTENT START -->
+            <div class="main-content campaign-edit">
+        <div class="section__content section__content--p10">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 card-main">
+                                                <div class="deal-view-box">
+                            <div class="campaign-number-time-sec mb-3">
+                                <div class="campaign-number text-center">
+                                    <h4>Editing Campaign : 1100000003 Drive Fast with X3</h4>
+                                </div>
+                                <div class="campaign-date text-center">
+                                    <span>Deal Valid From date 05-01-2023 to Till date 06-30-2024  Deal Year 2023</span>
+                                </div>
+                            </div>
+                            <form method="post" id="edit_campaign">
+                            <input type="hidden" name="_token" value="xcinm65ZNAgbcM9aXDZYOkdU9qWMc8RoPpzr1RId">                                <input type="hidden" name="campaign_id" id="campaign_id" value="" />
+                                <input type="hidden" name="campaign_deal_id" id="campaign_deal_id" value="" />
+                                <input type="hidden" name="deal_payloads_name" id="deal_payloads_name" value="" />
+                                <input type="hidden" name="campaign_payload_id" id="campaign_payload_id" value="" />
+                                <input type="hidden" name="campaign_day_time" id="campaign_day_time" value="" />
+                                <input type="hidden" name="inv_type" id="inv_type" value="" />
+                                <input type="hidden" name="inv_length" id="inv_length" value="" />
+                                <input type="hidden" name="dollar_rates" id="dollar_rates" value="" />
+                                <input type="hidden" name="per_rate" id="per_rate" value="" />
+                                <input type="hidden" name="total_avails" id="total_avails" value="" />
+                                <input type="hidden" name="total_unit" id="total_unit" value="" />
+                                <div class="responsive-tabs d-md-flex">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a id="general" href="#pane-A" class="nav-link active" data-bs-toggle="tab" role="tab"><i class="fa fa-wrench" aria-hidden="true"></i>General</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a id="cpm-imp" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab"><i class="fa fa-eye" aria-hidden="true"></i>CPM/IPM</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a id="flighting" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab"><i class="fa fa-calendar-o" aria-hidden="true"></i>Flighting</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a id="summary" href="#pane-D" class="nav-link" data-bs-toggle="tab" role="tab"><i class="fa fa-file-text" aria-hidden="true"></i>Summary</a>
+                                        </li>
+                                    </ul>
+                                    <div id="content" class="tab-content" role="tablist">
+                                        <div id="pane-A" class="general-tab card tab-pane fade show active" role="tabpanel"
+                                            aria-labelledby="general">
+                                            <div class="card-header" role="tab" id="heading-A">
+                                                <h5 class="mb-0">
+                                                    <a data-bs-toggle="collapse" href="#collapse-A"
+                                                        aria-expanded="true" aria-controls="collapse-A">
+                                                        General
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapse-A" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="campaign_number">Campaign Number</label>
+                                                            <input type="text" id="campaign_number" class="au-input au-input--full form-control campaign_number" name="campaign_number" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="campaign_name">Campaign Name</label>
+                                                            <input type="text" id="campaign_name"class="au-input au-input--full form-control campaign_name"name="campaign_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="brand_name">Brand</label>
+                                                            <input type="text" id="brand_name"class="au-input au-input--full form-control brand_name"name="brand_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="media_line">Media Line</label>
+                                                            <input type="text" id="media_line"class="au-input au-input--full form-control media_line_name"name="media_line_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="dollar_rate">$ Rate</label>
+                                                            <input type="text" id="dollar_rate"class="au-input au-input--full form-control"name="dollar_rate" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="agency_name">Agency Name</label>
+                                                            <input type="text" id="agency_name"class="au-input au-input--full form-control"name="agency_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="demo_name">Demo</label>
+                                                            <input type="text" id="demo_name"class="au-input au-input--full form-control"name="demo_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="ae_name">AE</label>
+                                                            <input type="text" id="ae_name"class="au-input au-input--full form-control"name="ae_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="outlet_name">Outlet</label>
+                                                            <input type="text" id="outlet_name"class="au-input au-input--full form-control"name="outlet_name" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="market_place">Market Place</label>
+                                                            <input type="text" id="market_place"class="au-input au-input--full form-control"name="market_place" value="" disabled="">
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="realistic">Realistic</label>
+                                                            <div class="number-field">
+                                                                <input type="text" id="realistic"class="au-input au-input--full form-control"name="realistic" value="" disabled="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="agency_commision">Agency Commision</label>
+                                                            <div class="number-field">
+                                                                <input type="text" id="agency_commision"class="au-input au-input--full form-control"name="agency_commision" value="" disabled="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="revenue_risk">Revenue Risk</label>
+                                                            <div class="number-field">
+                                                                <input type="text" id="revenue_risk"class="au-input au-input--full form-control"name="revenue_risk" value="" disabled="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 form-group form-group-inline">
+                                                            <label for="budget">Budget</label>
+                                                            <input type="text" id="budget"class="au-input au-input--full form-control"name="budget" value="" disabled="">
+                                                        </div>
+                                                        <div class="btn-row mt-3 text-center">
+                                                            <a href="javascript:void(0);" class="btn btn-lg btn-secondary tab-btn" attr-active="cpm-imp" >Go To CPM/IPM</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="pane-B" class="cpm-imp-tab card tab-pane fade" role="tabpanel" aria-labelledby="cpm-imp">
+                                            <div class="card-header" role="tab" id="heading-B">
+                                                <h5 class="mb-0">
+                                                    <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">
+                                                        CPM/IPM
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapse-B" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="realistic">Demographics</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <select name="demographic_name" class="au-input au-input--full" id="demographic_name" >
+                                                                    <option value="">Demographic</option>
+                                                                                                                                                                                                                        <option value="3">HH</option>
+                                                                                                                                                    <option value="4">A18-49</option>
+                                                                                                                                                    <option value="5">W18-49</option>
+                                                                                                                                                    <option value="6">M18-49</option>
+                                                                                                                                                    <option value="7">A25-54</option>
+                                                                                                                                                    <option value="8">W25-54</option>
+                                                                                                                                                    <option value="9">A18+</option>
+                                                                                                                                                    <option value="10">W18+</option>
+                                                                                                                                                    <option value="11">A18-34</option>
+                                                                                                                                                    <option value="12">W18-34</option>
+                                                                                                                                                    <option value="13">M21-34</option>
+                                                                                                                                                    <option value="14">W21-34</option>
+                                                                                                                                                    <option value="15">A25+</option>
+                                                                                                                                                    <option value="16">A25-49</option>
+                                                                                                                                                    <option value="17">W25-49</option>
+                                                                                                                                                    <option value="18">A35-54</option>
+                                                                                                                                                    <option value="19">M35-54</option>
+                                                                                                                                                    <option value="20">W35-54</option>
+                                                                                                                                                    <option value="21">ALL</option>
+                                                                                                                                                                                                                </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="demo_population">Demo Population</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="number" name="cpm_ipm_demo_population" max="1" min="0" class="au-input--full form-control" value="" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="demo_population">Impressions</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="number" name="cpm_ipm_impressions" max="1" min="0" class="au-input--full form-control" value="" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="demo_population">GRP</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="number" name="cpm_ipm_grp" max="1" min="0" class="au-input--full form-control" value="" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="demo_population">CPM</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="number" name="cpm_ipm_cpm" max="1" min="0" class="au-input--full form-control" value="" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-row mt-3 text-center">
+                                                            <a href="javascript:void(0);" class="btn btn-lg btn-secondary tab-btn" attr-active="general" >Go To General</a>
+                                                            <a href="javascript:void(0);" class="btn btn-lg btn-secondary ml-md-3 tab-btn" attr-active="flighting" >Go To Flighting</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="pane-C" class="flighting-tab card tab-pane fade" role="tabpanel" aria-labelledby="flighting">
+                                            <div class="card-header" role="tab" id="heading-C">
+                                                <h5 class="mb-0">
+                                                    <a data-bs-toggle="collapse" href="#collapse-C"
+                                                        aria-expanded="true" aria-controls="collapse-C">
+                                                        Flighting
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapse-C" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-C">
+                                                <div class="card-body">
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group date-field">
+                                                                    <input type="text" placeholder="Flight Start Date" id="flight_start_date" class="au-input au-input--full form-control" name="flight_start_date">
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="text" id="campaign_flight_start_date" placeholder="MM/DD/YYYY" class="au-input au-input--full form-control" name="campaign_flight_start_date" value=""disabled="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="revenue_risk">Ad Length</label>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="text" id="ad_length" class="au-input au-input--full form-control" name="ad_length" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group date-field">
+                                                                    <input type="text" placeholder="Flight End Date" id="flight_end_date" class="au-input au-input--full form-control" name="flight_end_date" >
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="text" id="campaign_flight_end_date" placeholder="MM/DD/YYYY" class="au-input au-input--full form-control" name="campaign_flight_end_date" value=""disabled="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <select name="day_parts_id"class="au-input au-input--full" id="day_parts_id">
+                                                                    <option value="">Time / Day Part</option>
+                                                                                                                                                                                                                                                            <option value="1">PRIME</option>
+                                                                                                                                                                            <option value="2">WEEKEND DAYTIME</option>
+                                                                                                                                                                            <option value="3">SPORT</option>
+                                                                                                                                                                            <option value="4">SIMULCAST</option>
+                                                                                                                                                                            <option value="5">06H00 - 16h40</option>
+                                                                                                                                                                            <option value="6">19H30 - 22H00</option>
+                                                                                                                                                                            <option value="7">20H00</option>
+                                                                                                                                                                            <option value="8">20H00 - 24H00</option>
+                                                                                                                                                                            <option value="9">24H00 - 06H00</option>
+                                                                                                                                                                            <option value="10">06H00 - 18H00</option>
+                                                                                                                                                                                                                                        </select>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <input type="text" id="campaign_day_parts"class="au-input au-input--full form-control"name="campaign_day_parts" value=""disabled="">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="flighting-table-box">
+                                                        <table class="table custom-table table-borderless table-striped dataTable no-footer" id="edit_flight">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th>S - Sunday</th>
+                                                                    <th>M - Monday</th>
+                                                                    <th>T - Tuesday</th>
+                                                                    <th>W - Wednesday</th>
+                                                                    <th>T - Thursday</th>
+                                                                    <th>F - Friday</th>
+                                                                    <th>S - Saturday</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="day-checkbox-list">
+                                                                    <td>Days</td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="S" id="sunday" value="sunday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="M" id="monday" value="monday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="T" id="tuesday" value="tuesday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="W" id="wednesday" value="wednesday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="T" id="thursday" value="thursday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="F" id="friday" value="friday"  /></div></td>
+                                                                    <td><div class="form-check"><input type="checkbox" class="form-check-input" name="days[]" day="S" id="saturday" value="saturday"  /></div></td>
+                                                                </tr>
+                                                                <tr class="day-split-checkbox-list">
+                                                                    <td>Split</td>
+                                                                    <td>
+                                                                        <div class="number-field">    
+                                                                            <input type="number" class="au-input form-control" name="sunday_split" id="sunday_split" value="" max="100" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="monday_split" id="monday_split" value="" max="100" /></div></td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="tuesday_split" id="tuesday_split" value="" max="100" /></div></td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="wednesday_split" id="wednesday_split" value="" max="100" /></div></td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="thursday_split" id="thursday_split" value="" max="100" /></div></td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="friday_split" id="friday_split" value="" max="100" /></div></td>
+                                                                    <td><div class="number-field"><input type="number" class="au-input form-control" name="saturday_split" id="saturday_split" value="" max="100" /></div></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div> 
+                                                    <div class="btn-row mt-3 text-center">
+                                                        <a href="javascript:void(0);" class="btn btn-lg btn-secondary tab-btn" attr-active="cpm-imp" >Go To CPM/IPM</a>
+                                                        <a href="javascript:void(0);" class="btn btn-lg btn-secondary ml-md-3 tab-btn" attr-active="summary" >Go To Summary</a>
+                                                    </div>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="pane-D" class="summary-tab card tab-pane fade " role="tabpanel" aria-labelledby="summary">
+                                            <div class="card-header" role="tab" id="heading-D">
+                                                <h5 class="mb-0">
+                                                    <a data-bs-toggle="collapse" href="#collapse-D"
+                                                        aria-expanded="true" aria-controls="collapse-D">
+                                                        Summary
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapse-D" class="collapse" data-bs-parent="#content"
+                                                role="tabpanel" aria-labelledby="heading-D">
+                                                <div class="card-body" id="summary">
+                                                    <div class="row mb-2">
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="campaign_number">Campaign Number</label>
+                                                            <span class="campaign_number au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="campaign_name">Campaign Name</label>
+                                                            <span class="campaign_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="brand_name">Brand</label>
+                                                            <span class="brand_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="media_line">Media Line</label>
+                                                            <span class="media_line_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="demo_name">Demo</label>
+                                                            <span class="demo_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6 col-xxl-4 form-group form-group-inline">
+                                                            <label for="ae_name">AE</label>
+                                                            <span class="ae_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6  col-xxl-4 form-group form-group-inline">
+                                                            <label for="outlet_name">Outlet</label>
+                                                            <span class="outlet_name au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6  col-xxl-4 form-group form-group-inline">
+                                                            <label for="market_place">Market Place</label>
+                                                            <span class="market_place au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6  col-xxl-4 form-group form-group-inline">
+                                                            <label for="date_change">Date Change</label>
+                                                            <span class="date_change au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                        <div class="col-md-6  col-xxl-4 form-group form-group-inline">
+                                                            <label for="chnage_by">Change By</label>
+                                                            <span class="chnage_by au-input au-input--full form-control disable-bg "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="new-campaign-table mb-4">
+                                                    <h4>New Detail</h4>
+                                                        <div class="flight-date row mb-4">
+                                                            <div class="col-lg-6 form-group form-group-inline flight-start-date">
+                                                                <span class="label">Flight Start Date</span>
+                                                                <span class="new-flight-stat-date-text au-input au-input--full form-control ">MM/DD/YYYY</span>
+                                                            </div>
+                                                            <div class="col-lg-6 form-group form-group-inline flight-end-date">
+                                                                <span class="label">Flight End Date</span>
+                                                                <span class="new-flight-end-date-text au-input au-input--full form-control">MM/DD/YYYY</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="new-campaign-table-box">
+                                                            <table id="new_campaign_table"  class="table custom-table table-borderless table-striped dataTable no-footer"  style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Campaign Number</th>
+                                                                        <th>Campaign Name</th>
+                                                                        <th>Title</th>
+                                                                        <th>Day/ Time</th>
+                                                                        <th>Brand</th>
+                                                                        <th>Start Flight</th>
+                                                                        <th>End Flight</th>
+                                                                        <th>Media Line</th>
+                                                                        <th>Inv Type</th>
+                                                                        <th>Inv Length</th>
+                                                                        <th>$ Rate</th>
+                                                                        <th>$ Rate</th>
+                                                                        <th>% Rate</th>
+                                                                        <th>Total Avails</th>
+                                                                        <th>Total Unit</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="tr-shadow">
+                                                                        <td class="new-campaign-id"></td>
+                                                                        <td class="new-campaign-name" ></td>
+                                                                        <td class="new-campaign-deal-name" ></td>
+                                                                        <td class="new-campaign_day-time" ></td>
+                                                                        <td class="new-campaign-brand" ></td>
+                                                                        <td class="new-campaign-start-flight-date" ></td>
+                                                                        <td class="new-campaign-end-flight-date" ></td>
+                                                                        <td class="new-campaign-media-line" ></td>
+                                                                        <td class="new-campaign-inv-type" ></td>
+                                                                        <td class="new-campaign-inv-length" ></td>
+                                                                        <td class="new-campaign-rate" ></td>
+                                                                        <td class="new-campaign-do-rate" ></td>
+                                                                        <td class="new-campaign-per-rate" ></td>
+                                                                        <td class="new-campaign-total-avail" ></td>
+                                                                        <td class="new-campaign-total-unit" ></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="old-campaign-table">
+                                                        <h4>Old Detail</h4>
+                                                        <div class="flight-date row mb-4">
+                                                            <div class="flight-start-date form-group form-group-inline col-lg-6">
+                                                                <span class="label">Flight Start Date</span>
+                                                                <span class="flight-stat-date-text au-input au-input--full form-control">MM/DD/YYYY</span>
+                                                            </div>
+                                                            <div class="flight-end-date form-group form-group-inline col-lg-6">
+                                                                <span class="label">Flight End Date</span>
+                                                                <span class="flight-end-date-text au-input au-input--full form-control">MM/DD/YYYY</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="old-campaign-table-box">
+                                                            <table id="old_campaign_table" class="table custom-table table-borderless table-striped dataTable no-footer" style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Campaign Number</th>
+                                                                        <th>Campaign Name</th>
+                                                                        <th>Title</th>
+                                                                        <th>Day/ Time</th>
+                                                                        <th>Brand</th>
+                                                                        <th>Start Flight</th>
+                                                                        <th>End Flight</th>
+                                                                        <th>Media Line</th>
+                                                                        <th>Inv Type</th>
+                                                                        <th>Inv Length</th>
+                                                                        <th>$ Rate</th>
+                                                                        <th>$ Rate</th>
+                                                                        <th>% Rate</th>
+                                                                        <th>Total Avails</th>
+                                                                        <th>Total Unit</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="tr-shadow">
+                                                                        <td class="old-campaign-id"></td>
+                                                                        <td class="old-campaign-name" ></td>
+                                                                        <td class="old-campaign-deal-name" ></td>
+                                                                        <td class="old-campaign_day-time" ></td>
+                                                                        <td class="old-campaign-brand" ></td>
+                                                                        <td class="old-campaign-start-flight-date" ></td>
+                                                                        <td class="old-campaign-end-flight-date" ></td>
+                                                                        <td class="old-campaign-media-line" ></td>
+                                                                        <td class="old-campaign-inv-type" ></td>
+                                                                        <td class="old-campaign-inv-length" ></td>
+                                                                        <td class="old-campaign-rate" ></td>
+                                                                        <td class="old-campaign-do-rate" ></td>
+                                                                        <td class="old-campaign-per-rate" ></td>
+                                                                        <td class="old-campaign-total-avail" ></td>
+                                                                        <td class="old-campaign-total-unit" ></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-row mt-3 text-center">
+                                                        <a href="javascript:void(0);" class="btn btn-lg btn-secondary keep-original" attr-active="cpm-imp" >Keep Original</a>
+                                                        <a href="javascript:void(0);" class="btn btn-lg btn-secondary ml-md-3 tab-btn" attr-active="flighting" >Go To Flighting</a>
+                                                        <input type="submit" class="btn btn-lg btn-secondary ml-md-3" name="submit" id="submit" value="Send To Approval">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                                            </div>
+                </div>
+            </div>        
+        </div>
+    </div> 
+    <!-- MAIN CONTENT END -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div  id="copyright" class="copyright text-center">
+                <p>Copyright &copy; 2023 AdvertiserReplay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>        
+        <!-- FOOTER START -->
+               <script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery-3.7.0.min.js" defer></script>
+               <script src="vendor/bootstrap-5.1/popper.min.js"></script>
+               <script src="vendor/bootstrap-5.1/bootstrap.min.js"></script>
+               <script src="vendor/animsition/animsition.min.js"></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/select2/select2.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery.validate.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/jquery/additional-methods.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/moment.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/daterangepicker.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/datatable/jquery.dataTables.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/datatable/dataTables.bootstrap5.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/common.js" defer></script>
+
+ 
+<script src="http://clientreviewlink.com/public/assets/js/custom/campaign.js" defer></script> 
+<script src="js/main.js"></script> 
+       <!-- FOOTER END -->
+    </div>
+</body>
+
+</html>

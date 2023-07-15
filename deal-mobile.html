@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="xcinm65ZNAgbcM9aXDZYOkdU9qWMc8RoPpzr1RId">
+    <title> Deal </title>
+   
+    <meta name="description" content="Laravel Starter">
+    <meta name="author" content="FasTrax Infotech">
+    <meta name="web-url" content="http://clientreviewlink.com" />
+    <meta name="storage-path" content="/home/clientreviewlink/public_html/storage" />
+
+        
+    <link rel="shortcut icon" href="http://clientreviewlink.com/public/favicon.ico">
+    <!-- Fontfaces CSS-->
+    <link href="http://clientreviewlink.com/public/assets/css/font-face.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    
+    <!-- Bootstrap 5 css -->
+    <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.bundle.min.css" rel="stylesheet" media="all">   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link href="http://clientreviewlink.com/public/assets/css/common/datatable/dataTables.bootstrap5.min.css" rel="stylesheet" media="all">   
+
+    <!-- Select2 -->
+    <link href="http://clientreviewlink.com/public/assets/css/common/select2/select2.min.css" rel="stylesheet" media="all">
+    
+    <!-- Theme css -->
+    <link href="http://clientreviewlink.com/public/assets/css/theme.css" rel="stylesheet" media="all">
+    
+    <!-- Custom css -->
+    <link href="css/custom-style.css" rel="stylesheet" media="all">
+    <link href="http://clientreviewlink.com/public/assets/css/custom.css" rel="stylesheet" media="all"></head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- MOBILE HEADER START -->
+            <header class="header-mobile d-block d-lg-none">
+    <div class="header-mobile__bar">
+        <div class="container-fluid">
+            <div class="header-mobile-inner">
+                <a class="logo" href="http://clientreviewlink.com">
+                    <img src="http://clientreviewlink.com/public/images/logo/logo.png" alt="logo" />
+                </a>
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-mobile__list list-unstyled">
+                <li class="" ><a href="http://clientreviewlink.com"><i class="fas fa-tachometer-alt"></i>Dashbaord</a></li>
+                <li class="active" ><a href="http://clientreviewlink.com/deal"><i class="fa fa-thumbs-up"></i>Deal</a></li>
+                <li class=""><a href="http://clientreviewlink.com/campaign"><i class="fa fa-volume-up"></i>Campaign</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-wrench"></i>Ad Operation</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-sitemap"></i>Administration</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>        <!-- MOBILE HEADER END -->
+
+        <!-- LEFT SIDE BAR MENU START -->
+            <aside class="menu-sidebar dark_sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="http://clientreviewlink.com">
+            <img src="http://clientreviewlink.com/public/images/logo/logo.png" class="main-bar" alt="logo" />
+            <img src="http://clientreviewlink.com/public/images/logo/logo-small.svg" class="side-bar" alt="logo" />
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li class="" ><a href="http://clientreviewlink.com"><i class="fas fa-tachometer-alt"></i>Dashbaord</a></li>
+                <li class="active" ><a href="http://clientreviewlink.com/deal"><i class="fa fa-thumbs-up"></i>Deal</a></li>
+                <li class=""><a href="http://clientreviewlink.com/campaign"><i class="fa fa-bullhorn" aria-hidden="true"></i>Campaign</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-cogs" aria-hidden="true"></i>Ad Operation</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
+                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-users" aria-hidden="true"></i>Administration</a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>        <!-- LEFT SIDE BAR MENU END -->
+
+            <div class="page-container">
+    <!-- DESHTOP TOP MENU START -->
+    <header class="header-desktop white-bg">
+        <div class="section__content section__content--p10">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                    <div class="header-wrap-box d-flex align-items-center justify-content-between">
+                        <div class="bar-icon-box">
+                            <a class="bars-icon" href="#" role="button"><i class="fas fa-bars"></i></a> 
+                        </div> 
+                        <ul class="d-flex client-info">
+                            <li>
+                                <span>Client Name</span>
+                                                                    <b>Foxy TV </b>
+                                                            </li>
+                            <li>
+                                <span>Advertiser Name</span>
+                                                                    <b>BMW</b>
+                                                            </li>
+                            <li>
+                                <span>Media Line</span>
+                                                                    <b>Linear</b>
+                                                            </li>
+                        </ul>
+                        <div class="account-info-main d-flex align-items-center">
+                            <div class="account-info account-wrap">
+                                <div class="account-item clearfix js-item-menu">
+                                    <div class="image">
+                                        <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content">
+                                                                                    <a class="js-acc-btn" href="/">Advertiser BMW</a>
+                                                                            </div>
+                                    <div class="account-dropdown js-dropdown">
+                                        <div class="info clearfix">
+                                            <div class="image">
+                                                    <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="name">
+                                                                                                            <a href="/">Advertiser BMW</a>
+                                                                                                    </h5>
+                                                                                                    <span class="email">devloper.xchop@gmail.com</span>
+                                                                                            </div>
+                                        </div>
+                                        <div class="client-info-box">
+                                            <ul class="client-info">
+                                                <li>
+                                                    <span>Client Name</span>
+                                                                                        <b>Foxy TV </b>
+                                                                                </li>
+                                                <li>
+                                                    <span>Advertiser Name</span>
+                                                                                        <b>BMW</b>
+                                                                                </li>
+                                                <li>
+                                                    <span>Media Line</span>
+                                                                                        <b>Linear</b>
+                                                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="account-dropdown__body">
+                                            <div class="account-dropdown__item">
+                                                <p><strong>Advertiser ID: </strong>8</p>
+                                            </div>
+                                            <div class="account-dropdown__item">
+                                                <p><strong>Login Time: </strong>07-15-2023 06:27:51</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-log">
+                                <a href="http://clientreviewlink.com/logout"><i class="zmdi zmdi-power"></i>Logout</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-notification-success text-center mb-3 alert-success" role="alert">
+            <button type="button" class="close" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <p><i class="fa fa-check"></i><span class="success-message">Success</span></p>
+        </div>
+        <div class="alert alert-notification-error text-center mb-3 alert-danger" role="alert">
+            <button type="button" class="close" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <p><i class="fa fa-warning"></i><span class="error-message">Error</span></p>
+        </div>
+    </header>    <!-- DESHTOP TOP MENU END -->
+    <!-- MAIN CONTENT START -->
+            <div class="main-content deal-view-sec">
+        <div class="section__content section__content--p10">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 card-main">
+                        <div class="deal-view-box card">
+                            <div class="head d-flex justify-content-center align-items-center mb-4">
+                                <h2 class="mb-0">Deal View</h2>
+                                <div class="d-flex align-items-center flight-range select">
+                                    <div class="daterange d-flex align-items-center">
+                                        <select name="deal_status" id="deal_status" class="au-input" >
+                                            <option value="">Status</option>
+                                                                                                                                                <option value="inflight">Inflight</option>
+                                                                                                    <option value="proposal">Proposal</option>
+                                                                                                    <option value="ended">Ended</option>
+                                                                                                    <option value="approved">Approved</option>
+                                                                                                    <option value="order">Ordered</option>
+                                                                                                    <option value="planning">Planning</option>
+                                                                                                    <option value="expired">Expired</option>
+                                                                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row deal-view">
+                                                                                                                                                    <div class="col">
+                                            <div class="deal-component bg-blue">
+                                                <h3>Dollars</h3>
+                                                <h5 id="deal_dollars">$0</h5>
+                                                <div class="icon-box">
+                                                <img src="http://clientreviewlink.com/public/images/dashboard/doller-icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="col">
+                                            <div class="deal-component bg-green">
+                                                <h3>CPM</h3>
+                                                <h5 id="deal_cpm">$0</h5>
+                                                <div class="icon-box">
+                                                <img src="http://clientreviewlink.com/public/images/dashboard/cpm-icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="col">
+                                            <div class="deal-component bg-yellow">
+                                                <h3>Impressions</h3>
+                                                <h5 id="deal_impressions">$0</h5>
+                                                <div class="icon-box">
+                                                <img src="http://clientreviewlink.com/public/images/dashboard/impressions-icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="col">
+                                            <div class="deal-component bg-red">
+                                                <h3>GRP</h3>
+                                                <h5 id="deal_grp">$0</h5>
+                                                <div class="icon-box">
+                                                <img src="http://clientreviewlink.com/public/images/dashboard/grp-icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="col">
+                                            <div class="deal-component bg-orange">
+                                                <h3>Deal Unit</h3>
+                                                <h5 id="deal_deal_unit">$0</h5>
+                                                <div class="icon-box">
+                                                <img src="http://clientreviewlink.com/public/images/dashboard/deal-icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 card-main">
+                        <div class="deal-view-box card">
+                            <div class="table-responsive table-responsive-data2">
+                                <table id="deals_table" class="table custom-table table-borderless table-striped dataTable no-footer " style="width:100%;">
+                                    <thead>
+                                        <tr>
+                                                                                                                                                <th class="no-sort">Deal ID</th>
+                                                                                                                                                                                                <th class="reorder">Campaign Number</th>
+                                                                                                                                                                                                <th class="no-sort">Title</th>
+                                                                                                                                                                                                <th class="no-sort">Day/ Time</th>
+                                                                                                                                                                                                <th class="no-sort">Brand</th>
+                                                                                                                                                                                                <th class="no-sort">Inv Type</th>
+                                                                                                                                                                                                <th class="no-sort">Inv Length</th>
+                                                                                                                                                                                                <th class="no-sort">$ Rate</th>
+                                                                                                                                                                                                <th class="no-sort">$ Rate</th>
+                                                                                                                                                                                                <th class="no-sort">% Rate</th>
+                                                                                                                                                                                                <th class="no-sort">Total Avails</th>
+                                                                                                                                                                                                <th class="no-sort">Total Unit</th>
+                                                                                                                                                                                                <th class="no-sort">HH Rating</th>
+                                                                                                                                                                                                <th class="no-sort">HH (000)</th>
+                                                                                                                                                                                                <th class="no-sort">HH CPM</th>
+                                                                                                                                                                                                <th class="no-sort">HH Univ</th>
+                                                                                                                                                                                                <th class="no-sort">A25-49 Rating</th>
+                                                                                                                                                                                                <th class="no-sort">A25-49 (000)</th>
+                                                                                                                                                                                                <th class="no-sort">A25-49 CPM</th>
+                                                                                                                                                                                                <th class="no-sort">A25-49 Univ</th>
+                                                                                                                                                                                                <th class="no-sort">Status</th>
+                                                                                                
+                                        </tr>
+                                    </thead>
+                                    <tbody id="deal_view_body">
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000003</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000003</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">New X3 M3</td>
+                                                                                                                                                                                                                <td class="day_time"> M T  T F  PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">inflight</td>
+                                                                                                        
+                                            </tr>
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000004</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000004</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">Electric at USA</td>
+                                                                                                                                                                                                                <td class="day_time">  T  T   PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">inflight</td>
+                                                                                                        
+                                            </tr>
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000004</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000008</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">Electric at USA</td>
+                                                                                                                                                                                                                <td class="day_time">  T  T   PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">inflight</td>
+                                                                                                        
+                                            </tr>
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000005</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000005</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">American Top-eve</td>
+                                                                                                                                                                                                                <td class="day_time">S M T  T F  PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">proposal</td>
+                                                                                                        
+                                            </tr>
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000005</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000006</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">American Top-eve</td>
+                                                                                                                                                                                                                <td class="day_time">S M T  T F  PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">proposal</td>
+                                                                                                        
+                                            </tr>
+                                                                                    <tr class="tr-shadow">
+                                                                                                     
+                                                        <td class="deal_id">8100000005</td>
+                                                                                                                                                         
+                                                        <td class="campaign_number">1100000007</td>
+                                                                                                                                                         
+                                                        <td class="deal_name">American Top-eve</td>
+                                                                                                                                                                                                                <td class="day_time">S M T  T F  PRIME</td>
+                                                                                                                                                         
+                                                        <td class="brand_name">X3</td>
+                                                                                                                                                         
+                                                        <td class="inventory_type">NR</td>
+                                                                                                                                                         
+                                                        <td class="inventory_length">20</td>
+                                                                                                                                                         
+                                                        <td class="rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate">29</td>
+                                                                                                                                                         
+                                                        <td class="rc_rate_percentage">140</td>
+                                                                                                                                                         
+                                                        <td class="total_avil">144</td>
+                                                                                                                                                         
+                                                        <td class="total_unit">1</td>
+                                                                                                                                                         
+                                                        <td class="hh_rating"></td>
+                                                                                                                                                         
+                                                        <td class="hh_ss"></td>
+                                                                                                                                                         
+                                                        <td class="hh_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="hh_univ"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_rating"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_ss"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_cpm"></td>
+                                                                                                                                                         
+                                                        <td class="a25_49_univ"></td>
+                                                                                                                                                         
+                                                        <td class="status">proposal</td>
+                                                                                                        
+                                            </tr>
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div> 
+    <!-- MAIN CONTENT END -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div  id="copyright" class="copyright text-center">
+                <p>Copyright &copy; 2023 AdvertiserReplay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>        
+        <!-- FOOTER START -->
+             <script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery-3.7.0.min.js" defer></script>
+    <script src="vendor/bootstrap-5.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-5.1/bootstrap.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/select2/select2.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery.validate.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/jquery/additional-methods.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/moment.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/daterangepicker.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/datatable/jquery.dataTables.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/datatable/dataTables.bootstrap5.min.js" defer></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/common.js" defer></script>
+
+ 
+<script src="http://clientreviewlink.com/public/assets/js/custom/deal.js" defer></script>  
+<script src="js/main.js"></script>
+     <!-- FOOTER END -->
+    </div>
+</body>
+
+</html>
