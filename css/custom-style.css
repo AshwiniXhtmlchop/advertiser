@@ -185,7 +185,7 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
    .header-wrap .client-info{display: none !important;}
    .client-info-box, .account-dropdown .client-info{display: block !important;}
    .account-info-main, .bar-icon-box, .client-info{width: auto;}
-   .client-info-box{padding: 0 25px;}
+   .client-info-box{padding: 25px;}
    .deal-view-sec .deal-view .col, .campaign-view-sec .deal-view .col {width: 25%;flex: 0 0 auto;}
    .create-campaign-btn .flight-range{right: 20px !important;}
    .create-campaign-btn{min-height: 48px !important;}
@@ -222,14 +222,21 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
   .card-header h5 a{color: #333333;}
   .responsive-tabs .tab-content .card{margin-bottom: 15px;padding: 10px 0;}
   .btn{font-size: 1rem;}
+  .account-dropdown .info, .client-info-box{padding: 10px;}
 }
 @media (max-width: 575px) {
     .deal-view-sec .deal-view .col, .campaign-view-sec .deal-view .col{width: 100%;flex: 0 0 auto;}
     .btn-row .btn{width: 100%;margin-bottom: 10px;}
     .account-info-main{justify-content: center;width: 100%;}
+    .account-info-main{column-gap: 20px;}
+    .account-dropdown{width: 204px;min-width: inherit;}
+    .account-dropdown .info .image{float: none;margin: auto;}
+    .account-dropdown .info .content{margin-left: 0px;padding-left: 0px;}
+    .account-dropdown .info{text-align: center;}
 }
 @media (max-width: 479px) {
     .form-group-inline label, .form-group-inline span.label, .form-group-inline input, .form-group-inline select, .form-group-inline .number-field, .form-group-inline span{width: 100%;}
     .form-group-inline{display: block;}
     .form-group-inline label, .form-group-inline span.label{margin-bottom: 10px;}
+   
 }
