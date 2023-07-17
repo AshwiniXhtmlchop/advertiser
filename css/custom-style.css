@@ -147,6 +147,8 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
 .form-group-inline label, .form-group-inline span.label{width: 40%;margin-bottom: 0px;}
 .form-group-inline input, .form-group-inline select, .form-group-inline .number-field, .form-group-inline span{width: 60%;}
 .form-group-inline .number-field input{width: 100%;}
+.create-campaign-btn{min-height: inherit !important;}
+.create-campaign-btn .flight-range{right: auto !important;}
 @media (min-width: 1400px){
     .advertiser-view .head h2{width: calc(100% - 340px);padding-right: 5px;}
 }
@@ -184,9 +186,9 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
    .client-info-box, .account-dropdown .client-info{display: block !important;}
    .account-info-main, .bar-icon-box, .client-info{width: auto;}
    .client-info-box{padding: 0 25px;}
-   .deal-view-sec .deal-view .col, .campaign-view-sec .deal-view .col {width: 25%;flex: 0 0 auto;
-}
-   
+   .deal-view-sec .deal-view .col, .campaign-view-sec .deal-view .col {width: 25%;flex: 0 0 auto;}
+   .create-campaign-btn .flight-range{right: 20px !important;}
+   .create-campaign-btn{min-height: 48px !important;}
 }
 @media (max-width: 991px){
     .main-content{padding-bottom: 0px;}
