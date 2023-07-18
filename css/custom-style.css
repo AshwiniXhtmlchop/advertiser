@@ -194,7 +194,7 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
 @media (max-width: 991px){
     .main-content{padding-bottom: 0px;}
     .header-mobile{position: fixed;z-index: 111;width: 100%;top: 0;left: 0;}
-    .header-mobile__bar{background:#343a40;padding: 10px 0;}
+    .header-mobile .header-mobile__bar{background:#343a40;padding: 10px 0;}
     .header-mobile-inner a.logo{max-width: 175px;width: 100%;}
     .bar-icon-box{display: none;}
     .header-desktop .section__content{position: static;top: auto;transform: none;}
