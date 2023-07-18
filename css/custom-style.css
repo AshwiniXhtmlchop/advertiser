@@ -25,10 +25,10 @@ a{text-decoration: none;}
 .account-log a{font-size: 14px;color: #333333;font-weight: 500;}
 .account-log a:hover{color: #666666;}
 .account-log a i{margin-right: 10px;}
+.page-wrapper.login{position: relative;padding: 30px 0;}
 .login-content{position: relative;}
 .bg-img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover; object-position: top;}
 .login-form{position: relative;}
-.page-wrapper.login{padding-bottom: 0px;}
 /* .login-form label{color: #ffffff;} */
 .card-main{margin-bottom: 1rem;}
 .card{padding: 20px;box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);margin-bottom: 0px; height: 100%;position: relative;}
@@ -79,7 +79,7 @@ text-align: center;width: 60px;height: 60px;color: #ffffff;}
 .custom-table tr th, .custom-table tr td{font-size: 12px;padding: 10px 5px;box-shadow: none !important;text-align: center !important;}
 .flight-range{ column-gap: 10px; }
 .flight-range.select{position: absolute;top: 20px;right: 20px;}
-.card .dataTables_wrapper .row{margin: 10px 0 0 0 !important;}
+.card .dataTables_wrapper .row{margin-top: 10px !important;}
 div.dataTables_wrapper div.dataTables_length select{margin: 0 10px;}
 .table-striped tbody tr:nth-of-type(odd) {background-color: rgba(0,0,0,.10) !important;}
 .responsive-tabs {column-gap: 15px;}
@@ -207,10 +207,10 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
     .header-mobile .header-mobile-inner{justify-content: center;position: relative;}
     .header-mobile .hamburger{position: absolute;left: 0;}
     .account-info .account-item > .content > a, .account-log a{font-size: 0px;}
-    .account-log a i{font-size: 14px;margin-right: 0px;color: #a5c32a;}
+    .account-log a i{font-size: 20px;margin-right: 0px;color: #a5c32a;}
     .account-item > .content > a:after{display: none;}
     .account-item > .content{margin-left: 0px;padding-left: 0px;}
-    .account-info-main{column-gap: 10px;}
+    .account-info-main{column-gap: 15px;}
     .account-item .image{width: 35px;height: 35px;}
     .account-item .image i{font-size: 37px;color: #a5c32a;}
     .header-desktop .container-fluid{padding: 0px;}
