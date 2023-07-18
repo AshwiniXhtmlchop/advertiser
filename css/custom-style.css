@@ -207,15 +207,16 @@ transform: translate3d(0, -12px, 0) rotate(-90deg);top: -3px;}
     .header-mobile .header-mobile-inner{justify-content: center;position: relative;}
     .header-mobile .hamburger{position: absolute;left: 0;}
     .account-info .account-item > .content > a, .account-log a{font-size: 0px;}
-    .account-log a i{font-size: 20px;margin-right: 0px;color: #a5c32a;}
+    .account-log a i{font-size: 18px;margin-right: 0px;color: #a5c32a;}
     .account-item > .content > a:after{display: none;}
     .account-item > .content{margin-left: 0px;padding-left: 0px;}
     .account-info-main{column-gap: 15px;}
-    .account-item .image{width: 35px;height: 35px;}
-    .account-item .image i{font-size: 37px;color: #a5c32a;}
+    .account-item .image{width: 30px;height: 30px;}
+    .account-item .image i{font-size: 30px;color: #a5c32a;}
     .header-desktop .container-fluid{padding: 0px;}
     .account-dropdown:after{right: 10px;}
     .account-dropdown{width: 300px;min-width: inherit;top: 70px;}
+    .account-item > .content{padding: 0px;}
 }
 @media (max-width: 767px) {
   .responsive-tabs .tab-pane {display: block !important;opacity: 1;}
