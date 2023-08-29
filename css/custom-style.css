@@ -177,7 +177,7 @@ input[type=number] { -moz-appearance: textfield; }
   .page-container{padding-left: 250px;}
   .main-content{padding-top: 90px;}
   .header-desktop{left: 250px;}
-  .menu-sidebar , .page-container { transition: all .4s; }
+  .menu-sidebar, .page-container { transition: all .4s; }
   .header-resize .menu-sidebar { width: 82px; }
   .hover-resize .menu-sidebar { width: 250px; }
   .body-resize .page-container { padding-left: 82px; }
