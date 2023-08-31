@@ -332,6 +332,6 @@ select.form-control{-webkit-appearance: auto;-moz-appearance: auto;appearance: a
 @media (max-width: 479px) {
     .form-group-inline label, .form-group-inline span.label, .form-group-inline input, .form-group-inline select, .form-group-inline .number-field, .form-group-inline span{width: 100%;}
     .form-group-inline{display: block;}
-    .form-group-inline label, .form-group-inline span.label{margin-bottom: 10px;}
+    .form-group-inline label, .form-group-inline span.label{margin-bottom: 10px;text-align: left;}
    
 }
