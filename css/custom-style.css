@@ -192,6 +192,7 @@ select.form-control{-webkit-appearance: auto;-moz-appearance: auto;appearance: a
 }
 .main-content .section__content--p10{padding: 0px !important;}
 div.dataTables_wrapper div.dataTables_info{padding-top: 8px;}
+.au-input{padding: .375rem .75rem;}
 @media (min-width: 1400px){
     .advertiser-view .head h2{width: calc(100% - 340px);padding-right: 5px;}
 }
