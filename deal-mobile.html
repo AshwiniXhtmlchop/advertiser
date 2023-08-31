@@ -5,7 +5,7 @@
 <head>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="csrf-token" content="xcinm65ZNAgbcM9aXDZYOkdU9qWMc8RoPpzr1RId">
+    <meta name="csrf-token" content="TDrAKsalNQINP66CA2Bws9SF4uhS7eWteZVSwOAl">
     <title> Deal </title>
    
     <meta name="description" content="Laravel Starter">
@@ -24,18 +24,21 @@
     <!-- Bootstrap 5 css -->
     <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.min.css" rel="stylesheet" media="all">
     <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap.bundle.min.css" rel="stylesheet" media="all">   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
-    <link href="http://clientreviewlink.com/public/assets/css/common/datatable/dataTables.bootstrap5.min.css" rel="stylesheet" media="all">   
+    <link href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/twitter-bootstrap.min.css" rel="stylesheet" media="all"/>
+   
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/common/datatable/dataTables.bootstrap5.min.css"> 
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/common/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/common/bootstrap-5.1/bootstrap-datepicker.css">
 
     <!-- Select2 -->
-    <link href="http://clientreviewlink.com/public/assets/css/common/select2/select2.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/common/select2/select2.min.css" media="all">
     
     <!-- Theme css -->
-    <link href="http://clientreviewlink.com/public/assets/css/theme.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/theme.css" media="all">
     
     <!-- Custom css -->
-    <link href="css/custom-style.css" rel="stylesheet" media="all">
-    <link href="http://clientreviewlink.com/public/assets/css/custom.css" rel="stylesheet" media="all"></head>
+    <link rel="stylesheet" type="text/css" href="css/custom-style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://clientreviewlink.com/public/assets/css/custom.css" media="all"></head>
 
 <body>
     <div class="page-wrapper">
@@ -64,7 +67,8 @@
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-wrench"></i>Ad Operation</a></li>
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
-                <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-sitemap"></i>Administration</a></li>
+                <li><a href=""><i class="fa fa-sitemap"></i>Administration</a></li>
+                <li class=""><a href="http://clientreviewlink.com/api-insert"><i class="fa fa-database" aria-hidden="true"></i>API Insert</a></li>
             </ul>
         </div>
     </nav>
@@ -88,6 +92,7 @@
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-user"></i>Advertiser Profile</a></li>
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-file"></i>Reports</a></li>
                 <li><a href="http://clientreviewlink.com/no-page"><i class="fa fa-users" aria-hidden="true"></i>Administration</a></li>
+                <li class=""><a href="http://clientreviewlink.com/api-insert"><i class="fa fa-database" aria-hidden="true"></i>API Insert</a></li>
             </ul>
         </nav>
     </div>
@@ -95,28 +100,28 @@
 
             <div class="page-container">
     <!-- DESHTOP TOP MENU START -->
-    <header class="header-desktop white-bg">
-        <div class="section__content section__content--p10">
-            <div class="container-fluid">
-                <div class="header-wrap">
-                    <div class="header-wrap-box d-flex align-items-center justify-content-between">
-                        <div class="bar-icon-box">
-                            <a class="bars-icon" href="#" role="button"><i class="fas fa-bars"></i></a> 
-                        </div> 
+        <header class="header-desktop white-bg">
+    <div class="section__content section__content--p10">
+        <div class="container-fluid">
+            <div class="header-wrap">
+                <div class="header-wrap-box d-flex align-items-center justify-content-between">
+                    <div class="bar-icon-box">
+                        <a class="bars-icon" href="#" role="button"><i class="fas fa-bars"></i></a>        
+                    </div>
                         <ul class="d-flex client-info">
-                            <li>
-                                <span>Client Name</span>
-                                                                    <b>Foxy TV </b>
-                                                            </li>
-                            <li>
-                                <span>Advertiser Name</span>
-                                                                    <b>BMW</b>
-                                                            </li>
-                            <li>
-                                <span>Media Line</span>
-                                                                    <b>Linear</b>
-                                                            </li>
-                        </ul>
+                                                            <li>
+                                    <span>Broadcaster Name</span>
+                                        <b>Foxy TV </b>
+                                </li>
+                                                                                        <li>
+                                    <span>Advertiser Name</span>
+                                        <b>BMW</b>
+                                </li>
+                                                                                        <li>
+                                    <span>Media Line</span>
+                                    <b>Linear</b>
+                                </li>
+                                                    </ul>
                         <div class="account-info-main d-flex align-items-center">
                             <div class="account-info account-wrap">
                                 <div class="account-item clearfix js-item-menu">
@@ -124,43 +129,43 @@
                                         <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
                                     </div>
                                     <div class="content">
-                                                                                    <a class="js-acc-btn" href="/">Advertiser BMW</a>
+                                                                                    <a class="js-acc-btn" href="/">Xhtmlchop BMW</a>
                                                                             </div>
                                     <div class="account-dropdown js-dropdown">
+                                        <button class="dropdown-close"><i class="fa fa-times" aria-hidden="true"></i></button>
                                         <div class="info clearfix">
                                             <div class="image">
                                                     <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
                                             </div>
                                             <div class="content">
                                                 <h5 class="name">
-                                                                                                            <a href="/">Advertiser BMW</a>
+                                                                                                            <a href="/">Xhtmlchop BMW</a>
                                                                                                     </h5>
                                                                                                     <span class="email">devloper.xchop@gmail.com</span>
                                                                                             </div>
                                         </div>
                                         <div class="client-info-box">
                                             <ul class="client-info">
-                                                <li>
-                                                    <span>Client Name</span>
-                                                                                        <b>Foxy TV </b>
-                                                                                </li>
-                                                <li>
-                                                    <span>Advertiser Name</span>
-                                                                                        <b>BMW</b>
-                                                                                </li>
-                                                <li>
-                                                    <span>Media Line</span>
-                                                                                        <b>Linear</b>
-                                                                                </li>
-                                            </ul>
+                                                                                                    <li>
+                                                        <span>Broadcaster Name</span>
+                                                            <b>Foxy TV </b>
+                                                    </li>
+                                                                                                                                                    <li>
+                                                        <span>Advertiser Name</span>
+                                                            <b>BMW</b>
+                                                    </li>
+                                                                                                                                                    <li>
+                                                        <span>Media Line</span>
+                                                        <b>Linear</b>
+                                                    </li>
+                                                                                            </ul>
                                         </div>
-                                       
                                         <div class="account-dropdown__body">
                                             <div class="account-dropdown__item">
                                                 <p><strong>Advertiser ID: </strong>8</p>
                                             </div>
                                             <div class="account-dropdown__item">
-                                                <p><strong>Login Time: </strong>07-15-2023 06:27:51</p>
+                                                <p><strong>Login Time: </strong>08-31-2023 07:34:24</p>
                                             </div>
                                         </div>
                                     </div>
@@ -170,24 +175,23 @@
                                 <a href="http://clientreviewlink.com/logout"><i class="zmdi zmdi-power"></i>Logout</a>
                             </div>
                         </div>
-                    
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="alert alert-notification-success text-center mb-3 alert-success" role="alert">
-            <button type="button" class="close" aria-label="Close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
-            <p><i class="fa fa-check"></i><span class="success-message">Success</span></p>
-        </div>
-        <div class="alert alert-notification-error text-center mb-3 alert-danger" role="alert">
-            <button type="button" class="close" aria-label="Close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
-            <p><i class="fa fa-warning"></i><span class="error-message">Error</span></p>
-        </div>
-    </header>    <!-- DESHTOP TOP MENU END -->
+    </div>
+    <div class="alert alert-notification-success text-center mb-3 alert-success" role="alert">
+        <button type="button" class="close" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <p><i class="fa fa-check"></i><span class="success-message">Success</span></p>
+    </div>
+    <div class="alert alert-notification-error text-center mb-3 alert-danger" role="alert">
+        <button type="button" class="close" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <p><i class="fa fa-warning"></i><span class="error-message">Error</span></p>
+    </div>
+</header>    <!-- DESHTOP TOP MENU END -->
     <!-- MAIN CONTENT START -->
             <div class="main-content deal-view-sec">
         <div class="section__content section__content--p10">
@@ -199,15 +203,16 @@
                                 <h2 class="mb-0">Deal View</h2>
                                 <div class="d-flex align-items-center flight-range select">
                                     <div class="daterange d-flex align-items-center">
-                                        <select name="deal_status" id="deal_status" class="au-input" >
+                                        <select name="deal_status" id="deal_status" class="au-input form-control" >
                                             <option value="">Status</option>
-                                                                                                                                                <option value="inflight">Inflight</option>
-                                                                                                    <option value="proposal">Proposal</option>
-                                                                                                    <option value="ended">Ended</option>
-                                                                                                    <option value="approved">Approved</option>
-                                                                                                    <option value="order">Ordered</option>
-                                                                                                    <option value="planning">Planning</option>
-                                                                                                    <option value="expired">Expired</option>
+                                                                                                                                                <option value="1">InflIght</option>
+                                                                                                    <option value="2">Approved</option>
+                                                                                                    <option value="3">Proposal</option>
+                                                                                                    <option value="4">Ordered</option>
+                                                                                                    <option value="5">Planning</option>
+                                                                                                    <option value="6">Ended</option>
+                                                                                                    <option value="7">Expired</option>
+                                                                                                    <option value="8">Under Approval</option>
                                                                                                                                     </select>
                                     </div>
                                 </div>
@@ -266,7 +271,7 @@
                 <div class="row">
                     <div class="col-md-12 card-main">
                         <div class="deal-view-box card">
-                            <div class="table-responsive table-responsive-data2">
+                            <div class="table-responsive table-responsive-data2 ">
                                 <table id="deals_table" class="table custom-table table-borderless table-striped dataTable no-footer " style="width:100%;">
                                     <thead>
                                         <tr>
@@ -336,7 +341,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">inflight</td>
+                                                        <td class="status">InflIght</td>
                                                                                                         
                                             </tr>
                                                                                     <tr class="tr-shadow">
@@ -380,7 +385,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">inflight</td>
+                                                        <td class="status">InflIght</td>
                                                                                                         
                                             </tr>
                                                                                     <tr class="tr-shadow">
@@ -424,7 +429,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">inflight</td>
+                                                        <td class="status">InflIght</td>
                                                                                                         
                                             </tr>
                                                                                     <tr class="tr-shadow">
@@ -468,7 +473,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">proposal</td>
+                                                        <td class="status">Proposal</td>
                                                                                                         
                                             </tr>
                                                                                     <tr class="tr-shadow">
@@ -512,7 +517,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">proposal</td>
+                                                        <td class="status">Proposal</td>
                                                                                                         
                                             </tr>
                                                                                     <tr class="tr-shadow">
@@ -556,7 +561,7 @@
                                                                                                                                                          
                                                         <td class="a25_49_univ"></td>
                                                                                                                                                          
-                                                        <td class="status">proposal</td>
+                                                        <td class="status">Proposal</td>
                                                                                                         
                                             </tr>
                                                                             </tbody>
@@ -569,32 +574,40 @@
         </div>
     </div> 
     <!-- MAIN CONTENT END -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div  id="copyright" class="copyright text-center">
-                <p>Copyright &copy; 2023 AdvertiserReplay. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</div>        
-        <!-- FOOTER START -->
-             <script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery-3.7.0.min.js" defer></script>
-    <script src="vendor/bootstrap-5.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-5.1/bootstrap.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/select2/select2.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery.validate.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/jquery/additional-methods.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/moment.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/daterangepicker.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/datatable/jquery.dataTables.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/datatable/dataTables.bootstrap5.min.js" defer></script>
-<script src="http://clientreviewlink.com/public/assets/js/common/common.js" defer></script>
+        <footer>
+    <div class="container-fluid">
+    <div  id="copyright" class="copyright text-center">
+        <p>Copyright &copy; 2023 AdvertiserReplay. All rights reserved.</p>
+    </div>
+</div>    <script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery-3.7.0.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/bootstrap/popper.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/bootstrap/bootstrap.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/animsition/animsition.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/bootstrap/bootstrap.bundle.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/select2/select2.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/jquery/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/jquery/additional-methods.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/moment.min.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/daterangepicker/daterangepicker.js" ></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/datatable/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/datatable/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/datatable/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/datatable/responsive.bootstrap5.min.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/cookie/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="http://clientreviewlink.com/public/assets/js/common/bootstrap/bootstrap-datepicker.js"></script>
+
+<script src="http://clientreviewlink.com/public/assets/js/common/common.js" ></script>
+<script src="http://clientreviewlink.com/public/assets/js/common/main.js" ></script>
+
 
  
-<script src="http://clientreviewlink.com/public/assets/js/custom/deal.js" defer></script>  
-<script src="js/main.js"></script>
-     <!-- FOOTER END -->
+<script src="http://clientreviewlink.com/public/assets/js/custom/deal.js" ></script>  
+
+
+</footer></div>        
+        <!-- FOOTER START -->
+            
+        <!-- FOOTER END -->
     </div>
 </body>
 
